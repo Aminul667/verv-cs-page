@@ -10,7 +10,7 @@ const Hero = () => {
       {/* heading */}
       <div>
         <h2 className="text-4xl font-semibold leading-9">
-          Revolutionize Renting with Verv
+          Revolutionise Renting with Verv
         </h2>
         <h2 className="text-4xl font-semibold leading-9 mt-3">
           No Apps. No Hassle. Just Smarter Renting.
@@ -39,7 +39,9 @@ const Hero = () => {
         </div>
       </form>
       <div>
-        <p className="text-xl leading-6">Want to learn more about Verv!!</p>
+        <p className="text-xl leading-6 bg-red-500">
+          Here add tenant and landlord offers
+        </p>
         <button className="bg-[#90B3B7] text-white h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-8">
           About Verv
         </button>

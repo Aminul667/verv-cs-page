@@ -3,13 +3,15 @@ import { RiLuggageDepositLine } from "react-icons/ri";
 import { TiMessages } from "react-icons/ti";
 import { VscPreview } from "react-icons/vsc";
 
+import oliveTree from "../../assets/images/olive-tree.png";
+
 const KeyPoints = () => {
   return (
     <div>
       {/* grid */}
-      <div className="w-[600px] lg:w-[1200px] grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-4 p-4 mt-5 m-auto">
+      <div className="w-[600px] lg:w-[1200px] grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-4 mt-5 m-auto">
         <div
-          className="bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
+          className="bg-[#90B3B7] rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
 "
         >
           <VscPreview className="size-12" />
@@ -21,7 +23,7 @@ const KeyPoints = () => {
           </div>
         </div>
         <div
-          className="bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
+          className="bg-[#90B3B7] rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
 "
         >
           <TiMessages className="size-12" />
@@ -31,7 +33,7 @@ const KeyPoints = () => {
           </div>
         </div>
         <div
-          className="bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
+          className="bg-[#90B3B7] rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
 "
         >
           <BsListCheck className="size-12" />
@@ -43,7 +45,7 @@ const KeyPoints = () => {
           </div>
         </div>
         <div
-          className="bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
+          className="bg-[#90B3B7] rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-3
 "
         >
           <RiLuggageDepositLine className="size-12" />
@@ -55,6 +57,18 @@ const KeyPoints = () => {
           </div>
         </div>
       </div>
+
+      {/* grow with verv */}
+      <div className="w-[1200px] flex justify-center items-center gap-4 py-3 m-auto bg-green-400 rounded-3xl mt-11 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100">
+        <img src={oliveTree} alt="olive tree" />
+        <p className="text-2xl">
+          Grow with Verv - for each tenancy, we plant an olive tree, rooted in
+          the name of Landlords and Tenants.
+        </p>
+      </div>
+
+      {/* offers */}
+      <div></div>
     </div>
   );
 };
