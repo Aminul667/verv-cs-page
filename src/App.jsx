@@ -1,12 +1,11 @@
+import Hero from "./components/Home/Hero";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <div className="bg-green-300">
-        <h2 className="text-3xl font-bold text-red-500">
-          This is a check program
-        </h2>
+      <div className="h-screen bg-[#90B3B7] flex items-center justify-center">
+        <Hero />
       </div>
     </>
   );
