@@ -6,9 +6,7 @@ const Hero = () => {
       className="w-[1100px] h-[620px] bg-cover bg-center] rounded-lg"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
-      <h2 className="text-3xl font-bold text-red-500">
-        This is Hero Component
-      </h2>
+      <h2 className="text-3xl font-bold">Welcome to verv</h2>
     </div>
   );
 };
