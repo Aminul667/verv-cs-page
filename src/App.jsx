@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <div className="bg-white text-black font-inter">
-        <div className="h-[80px] w-full flex items-center bg-white">
+        <div className="h-[80px] w-full flex items-center bg-white shadow-md shadow-gray-300 sticky top-0 z-10 backdrop-filter backdrop-blur-3xl bg-opacity-10">
           <Navbar />
         </div>
-        <div className="divider m-0"></div>
+
         <Outlet />
         <Footer />
       </div>
