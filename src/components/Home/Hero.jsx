@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/hero.png";
 import { BiMailSend } from "react-icons/bi";
 
@@ -66,7 +67,7 @@ const Hero = () => {
           </p>
         </div>
         <button className="bg-[#90B3B7] h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-9">
-          About Verv
+          <Link to="/about">About Verv</Link>
         </button>
       </div>
     </div>
