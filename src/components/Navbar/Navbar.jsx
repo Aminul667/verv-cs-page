@@ -41,9 +41,12 @@ const Navbar = () => {
         <h2 className="text-3xl font-semibold">Coming Soon</h2>
       </div>
       <div className="navbar-end">
-        <a className="bg-[#90B3B7] h-10 rounded-md px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 cursor-pointer">
+        <Link
+          to="/about"
+          className="bg-[#90B3B7] h-10 rounded-md px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 cursor-pointer"
+        >
           About
-        </a>
+        </Link>
       </div>
     </div>
   );

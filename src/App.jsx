@@ -1,20 +1,17 @@
+import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
-import Hero from "./components/Home/Hero";
-import KeyPoints from "./components/Home/KeyPoints";
+// import Home from "./components/Home/Home";
+
 import Navbar from "./components/Navbar/Navbar";
 import "./index.css";
-// bg-[#90B3B7]
 function App() {
   return (
     <>
-      <div className="bg-white text-black">
+      <div className="bg-white text-black font-inter">
         <div className="h-[80px] w-full flex items-center bg-white">
           <Navbar />
         </div>
-        <div className="flex items-center justify-center py-10">
-          <Hero />
-        </div>
-        <KeyPoints />
+        <Outlet />
         <Footer />
       </div>
     </>

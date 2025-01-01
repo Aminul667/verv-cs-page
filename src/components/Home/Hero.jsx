@@ -4,7 +4,7 @@ import heroImage from "../../assets/images/hero.png";
 const Hero = () => {
   return (
     <div
-      className="w-[1100px] h-[620px] bg-cover bg-center] rounded-lg p-7 font-inter flex flex-col justify-center"
+      className="w-[1100px] h-[620px] bg-cover bg-center rounded-lg p-7 font-inter flex flex-col justify-center"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       {/* heading */}
