@@ -18,6 +18,19 @@ const About = () => {
               the nonsense, and give landlords and tenants a platform that
               actually works for them.
             </p>
+            {/* form */}
+            <form action="" className="font-inter my-8">
+              <div className="relative flex items-center w-[80%]">
+                <input
+                  type="text"
+                  placeholder="Enter your email address"
+                  className="h-12 w-full py-4 pl-4 pr-44 rounded-3xl border border-[#90B3B7] bg-white"
+                />
+                <button className="absolute right-0 bg-[#90B3B7]  h-10 rounded-3xl px-3 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500">
+                  Get Early Access!
+                </button>
+              </div>
+            </form>
           </div>
 
           {/* image */}
