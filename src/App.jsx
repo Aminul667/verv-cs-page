@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/Home/Hero";
 import KeyPoints from "./components/Home/KeyPoints";
 import Navbar from "./components/Navbar/Navbar";
@@ -6,7 +7,7 @@ import "./index.css";
 function App() {
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-white text-black">
         <div className="h-[80px] w-full flex items-center bg-white">
           <Navbar />
         </div>
@@ -14,6 +15,7 @@ function App() {
           <Hero />
         </div>
         <KeyPoints />
+        <Footer />
       </div>
     </>
   );
