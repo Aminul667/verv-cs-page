@@ -1,5 +1,3 @@
-// import { VscPreview } from "react-icons/vsc";
-import { IoIosSend } from "react-icons/io";
 import heroImage from "../../assets/images/hero.png";
 import { BiMailSend } from "react-icons/bi";
 
