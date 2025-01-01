@@ -4,14 +4,14 @@ import { LuUserCheck } from "react-icons/lu";
 const About = () => {
   return (
     <>
-      <div className="w-[1200px] m-auto bg-cover bg-center mt-10">
+      <div className="lg:w-[1200px] m-auto bg-cover bg-center mt-10">
         {/* hero */}
         <div className="flex justify-between px-5 py-8 mt-5 bg-[#90B3B7] rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100">
-          <div className="w-[650px] flex flex-col justify-center text-center">
-            <h2 className="text-4xl font-semibold leading-9 mb-5">
+          <div className="lg:w-[650px] flex flex-col justify-center text-center">
+            <h2 className="text-2xl lg:text-4xl font-semibold leading-9 mb-5">
               A Digital Bridge Between Landlords & Tenants
             </h2>
-            <p className="text-lg leading-7">
+            <p className="lg:text-lg leading-7">
               Welcome to Verv-where renting meets the future. As we step boldly
               into 2025, we&apos;re leaving outdated processes and sky-high fees
               in the dust. It&apos;s time to shake up the rental world, cut out
@@ -19,7 +19,7 @@ const About = () => {
               actually works for them.
             </p>
             {/* form */}
-            <form action="" className="font-inter my-8">
+            <form action="" className="font-inter my-8 hidden lg:block">
               <div className="relative flex items-center w-[80%]">
                 <input
                   type="text"
@@ -35,13 +35,13 @@ const About = () => {
 
           {/* image */}
           <div
-            className="w-[450px] h-[338px] bg-red-300 rounded-2xl"
+            className="w-[450px] h-[338px] bg-red-300 rounded-2xl hidden lg:block"
             style={{ backgroundImage: `url(${aboutImage})` }}
           ></div>
         </div>
 
         {/* body */}
-        <div className=" grid grid-cols-2 grid-rows-2 gap-6 mt-20">
+        <div className=" grid lg:grid-cols-2 lg:grid-rows-2 gap-6 mt-14 lg:mt-20">
           <div className="bg-[#90B3B7] rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100 p-4">
             <div className="flex items-center gap-4">
               <LuUserCheck size={35} />
