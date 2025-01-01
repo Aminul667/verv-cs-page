@@ -20,7 +20,7 @@ const Footer = () => {
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <div className="">
             <IoIosMailUnread size={40} />
-            <p>hello@vervrooms.com</p>
+            <p>hello@verv.org</p>
           </div>
         </nav>
       </footer>

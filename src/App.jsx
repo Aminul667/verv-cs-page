@@ -11,6 +11,7 @@ function App() {
         <div className="h-[80px] w-full flex items-center bg-white">
           <Navbar />
         </div>
+        <div className="divider m-0"></div>
         <Outlet />
         <Footer />
       </div>
