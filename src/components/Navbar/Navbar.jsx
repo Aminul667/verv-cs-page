@@ -41,7 +41,9 @@ const Navbar = () => {
         <h2 className="text-3xl font-semibold">Coming Soon</h2>
       </div>
       <div className="navbar-end">
-        <a className="btn">About</a>
+        <a className="btn bg-[#90B3B7] text-white text-xl border-none font-semibold">
+          About
+        </a>
       </div>
     </div>
   );

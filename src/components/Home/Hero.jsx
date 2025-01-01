@@ -33,16 +33,31 @@ const Hero = () => {
             placeholder="Enter your email address"
             className="h-12 w-full py-4 pl-4 pr-44 rounded-3xl border border-[#90B3B7] bg-white"
           />
-          <button className="absolute right-0 bg-[#90B3B7] text-white h-10 rounded-3xl px-3 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500">
+          <button className="absolute right-0 bg-[#90B3B7]  h-10 rounded-3xl px-3 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500">
             Get Early Access!
           </button>
         </div>
       </form>
       <div>
-        <p className="text-xl leading-6 bg-red-500">
-          Here add tenant and landlord offers
-        </p>
-        <button className="bg-[#90B3B7] text-white h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-8">
+        <div className="flex items-center gap-3">
+          <div className="bg-[#90B3B7] rounded-full size-6 flex items-center justify-center">
+            &#x2714;
+          </div>
+          <p className="text-sm">
+            <span className="font-semibold">For Landlords:</span> Chance to Win
+            3 Months of Featured Listings on Rightmove <br /> and Zoopla!
+          </p>
+        </div>
+        <div className="flex items-center gap-3 mt-4">
+          <div className="bg-[#90B3B7] rounded-full size-6 flex items-center justify-center">
+            &#x2714;
+          </div>
+          <p className="text-sm">
+            <span className="font-semibold">For Tenants:</span> Chance to Win 1
+            Month&apos;s Rent Cashback!
+          </p>
+        </div>
+        <button className="bg-[#90B3B7] h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-9">
           About Verv
         </button>
       </div>
