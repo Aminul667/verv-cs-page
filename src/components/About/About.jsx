@@ -3,16 +3,19 @@ import { useForm } from "react-hook-form";
 import aboutImage from "../../assets/images/aboutHome.jpg";
 import { LuUserCheck } from "react-icons/lu";
 import { toast } from "sonner";
+import { postData } from "../../utils/postData";
 
 const About = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log("Submitted Data:", data);
+    await postData(data, reset, toast);
   };
 
   const onError = (errors) => {

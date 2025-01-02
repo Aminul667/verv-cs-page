@@ -4,16 +4,19 @@ import heroImage from "../../assets/images/hero.png";
 import { BiMailSend } from "react-icons/bi";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
+import { postData } from "../../utils/postData";
 
 const Hero = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log("Submitted Data:", data);
+    await postData(data, reset, toast);
   };
 
   const onError = (errors) => {
