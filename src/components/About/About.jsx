@@ -14,7 +14,6 @@ const About = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    console.log("Submitted Data:", data);
     await postData(data, reset, toast);
   };
 
