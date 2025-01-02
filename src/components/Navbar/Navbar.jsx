@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <Link
             to="/about"
-            className="bg-[#90B3B7] h-10 rounded-md px-5 py-4 lg:flex items-center mr-1 font-semibold hover:bg-gray-500 cursor-pointer hidden"
+            className="bg-colorButton text-white h-10 rounded-md px-5 py-4 lg:flex items-center mr-1 font-semibold hover:bg-gray-500 cursor-pointer hidden"
           >
             About
           </Link>

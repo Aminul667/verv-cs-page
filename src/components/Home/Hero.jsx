@@ -76,15 +76,15 @@ const Hero = () => {
           />
           <button
             type="submit"
-            className="absolute right-0 bg-[#90B3B7]  h-10 rounded-3xl px-3 py-4 lg:flex lg:items-center mr-1 font-semibold hover:bg-gray-500 hidden"
+            className="absolute right-0 bg-colorButton text-white h-10 rounded-3xl px-3 py-4 lg:flex lg:items-center mr-1 font-semibold hover:bg-gray-500 hidden"
           >
             Get Early Access!
           </button>
           <button
             type="submit"
-            className="absolute right-0 bg-[#90B3B7] w-20 h-10 rounded-full flex items-center justify-center mr-1 font-semibold hover:bg-gray-500 lg:hidden"
+            className="absolute right-0 bg-colorButton w-20 h-10 rounded-full flex items-center justify-center mr-1 font-semibold hover:bg-gray-500 lg:hidden"
           >
-            <BiMailSend size={30} />
+            <BiMailSend size={30} className="text-white" />
           </button>
         </div>
       </form>
@@ -107,7 +107,7 @@ const Hero = () => {
             Month&apos;s Rent Cashback!
           </p>
         </div>
-        <button className="bg-[#90B3B7] h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-9">
+        <button className="bg-colorButton text-white h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-9">
           <Link to="/about">About Verv</Link>
         </button>
       </div>

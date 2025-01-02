@@ -60,7 +60,7 @@ const About = () => {
                   placeholder="Enter your email address"
                   className="h-12 w-full py-4 pl-4 pr-44 rounded-3xl border border-[#90B3B7] bg-white"
                 />
-                <button className="absolute right-0 bg-[#90B3B7]  h-10 rounded-3xl px-3 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500">
+                <button className="absolute right-0 bg-colorButton text-white h-10 rounded-3xl px-3 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500">
                   Get Early Access!
                 </button>
               </div>
