@@ -18,7 +18,7 @@ const Hero = () => {
 
   const onError = (errors) => {
     if (errors.email?.type === "required") {
-      toast.error("Email is required");
+      toast.error("Please enter your email address first");
     } else {
       toast.error(errors.email.message);
     }

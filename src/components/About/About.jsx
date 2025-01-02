@@ -1,7 +1,28 @@
+/* eslint-disable no-unused-vars */
+import { useForm } from "react-hook-form";
 import aboutImage from "../../assets/images/aboutHome.jpg";
 import { LuUserCheck } from "react-icons/lu";
+import { toast } from "sonner";
 
 const About = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log("Submitted Data:", data);
+  };
+
+  const onError = (errors) => {
+    if (errors.email?.type === "required") {
+      toast.error("Please enter your email address first");
+    } else {
+      toast.error(errors.email.message);
+    }
+  };
+
   return (
     <>
       <div className="lg:w-[1200px] m-auto bg-cover bg-center mt-10">
@@ -19,10 +40,21 @@ const About = () => {
               actually works for them.
             </p>
             {/* form */}
-            <form action="" className="font-inter my-8 hidden lg:block">
+            <form
+              action=""
+              onSubmit={handleSubmit(onSubmit, onError)}
+              className="font-inter my-8 hidden lg:block"
+            >
               <div className="relative flex items-center w-[80%]">
                 <input
                   type="text"
+                  {...register("email", {
+                    required: "Please enter your email address",
+                    pattern: {
+                      value: /^([\w.-]+@([\w-]+\.)+[\w-]{2,4})?$/,
+                      message: "Sorry, the email address is not correct!",
+                    },
+                  })}
                   placeholder="Enter your email address"
                   className="h-12 w-full py-4 pl-4 pr-44 rounded-3xl border border-[#90B3B7] bg-white"
                 />
