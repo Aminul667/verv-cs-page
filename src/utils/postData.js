@@ -1,6 +1,7 @@
 export const postData = async (data, resetCallback, toast) => {
   try {
-    const url = "http://localhost:5000/api/v1/users/save-email";
+    const url =
+      "https://holding-page-server.vercel.app/api/v1/users/save-email";
     const response = await fetch(url, {
       method: "POST",
       headers: {
