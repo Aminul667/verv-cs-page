@@ -1,8 +1,29 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import heroImage from "../../assets/images/hero.png";
 import { BiMailSend } from "react-icons/bi";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 const Hero = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log("Submitted Data:", data);
+  };
+
+  const onError = (errors) => {
+    if (errors.email?.type === "required") {
+      toast.error("Email is required");
+    } else {
+      toast.error(errors.email.message);
+    }
+  };
+
   return (
     <div
       className="w-full lg:w-[1100px] h-[620px] bg-cover bg-center rounded-lg p-7 font-inter flex flex-col justify-center"
@@ -29,20 +50,38 @@ const Hero = () => {
       </div>
 
       {/* form */}
-      <form action="" className="font-inter my-8">
+      {/* <Toaster position="top-center" richColors /> */}
+      <form
+        action=""
+        className="font-inter my-8"
+        onSubmit={handleSubmit(onSubmit, onError)}
+      >
         <p className="lg:hidden text-center">
           Enter your email to get early access
         </p>
         <div className="relative flex items-center w-full lg:w-1/2">
           <input
             type="text"
+            {...register("email", {
+              required: "Please enter your email address",
+              pattern: {
+                value: /^([\w.-]+@([\w-]+\.)+[\w-]{2,4})?$/,
+                message: "Sorry, the email address is not correct!",
+              },
+            })}
             placeholder="Enter your email address"
             className="h-12 w-full py-4 pl-4 pr-44 rounded-3xl border border-[#90B3B7] bg-white"
           />
-          <button className="absolute right-0 bg-[#90B3B7]  h-10 rounded-3xl px-3 py-4 lg:flex lg:items-center mr-1 font-semibold hover:bg-gray-500 hidden">
+          <button
+            type="submit"
+            className="absolute right-0 bg-[#90B3B7]  h-10 rounded-3xl px-3 py-4 lg:flex lg:items-center mr-1 font-semibold hover:bg-gray-500 hidden"
+          >
             Get Early Access!
           </button>
-          <button className="absolute right-0 bg-[#90B3B7] w-20 h-10 rounded-full flex items-center justify-center mr-1 font-semibold hover:bg-gray-500 lg:hidden">
+          <button
+            type="submit"
+            className="absolute right-0 bg-[#90B3B7] w-20 h-10 rounded-full flex items-center justify-center mr-1 font-semibold hover:bg-gray-500 lg:hidden"
+          >
             <BiMailSend size={30} />
           </button>
         </div>
