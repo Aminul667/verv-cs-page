@@ -35,12 +35,13 @@ const Hero = () => {
     >
       {/* heading */}
       <div>
-        <h2 className="text-2xl text-center lg:text-left lg:text-4xl font-semibold leading-9">
-          Revolutionise Renting with Verv
+        <h2 className="text-2xl text-center lg:text-left lg:text-4xl font-semibold leading-9 mb-5">
+          The Peer-to-Peer Marketplace for Landlords and Tenants.
         </h2>
-        <h2 className="text-2xl text-center lg:text-left lg:text-4xl font-semibold leading-9 mt-3">
+        <h2 className="text-2xl text-center lg:text-left lg:text-4xl font-semibold leading-9 mb-6">
           No Apps. No Hassle. Just Smarter Renting.
         </h2>
+        {/* <p2>No Apps. No Hassle. Just Smarter Renting.</p2> */}
       </div>
       <div className="mt-8">
         <p className="text-center lg:text-left lg:text-xl leading-6">
@@ -58,9 +59,7 @@ const Hero = () => {
         className="font-inter my-8"
         onSubmit={handleSubmit(onSubmit, onError)}
       >
-        <p className="lg:hidden text-center">
-          Enter your email to get early access
-        </p>
+        <p className="lg:hidden text-center font-semibold">Get early access</p>
         <div className="relative flex items-center w-full lg:w-1/2">
           <input
             type="text"
@@ -71,7 +70,7 @@ const Hero = () => {
                 message: "Sorry, the email address is not correct!",
               },
             })}
-            placeholder="Enter your email address"
+            placeholder="Enter your email"
             className="h-12 w-full py-4 pl-4 pr-44 rounded-3xl border border-[#90B3B7] bg-white"
           />
           <button
@@ -94,8 +93,9 @@ const Hero = () => {
             &#x2714;
           </div>
           <p className="text-sm">
-            <span className="font-semibold">For Landlords:</span> Chance to Win
-            3 Months of Featured Listings on Rightmove <br /> and Zoopla!
+            <span className="font-semibold">For Landlords:</span> Chance to be
+            part of the Verv Founders’ Club with lifetime access <br /> to
+            premium features!
           </p>
         </div>
         <div className="flex items-center gap-3 mt-4">
@@ -107,9 +107,9 @@ const Hero = () => {
             Month&apos;s Rent Cashback!
           </p>
         </div>
-        <button className="bg-colorButton text-white h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-9">
+        {/* <button className="bg-colorButton text-white h-10 rounded-3xl px-5 py-4 flex items-center mr-1 font-semibold hover:bg-gray-500 mt-9">
           <Link to="/about">About Verv</Link>
-        </button>
+        </button> */}
       </div>
     </div>
   );

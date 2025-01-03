@@ -42,7 +42,7 @@ const KeyPoints = () => {
           <div className="mt-4">
             <h3 className="text-2xl font-semibold mb-3">Free Listings</h3>
             <p className="lg:text-lg leading-6">
-              RAdvertise your property or room for free
+              Advertise your property or room for free
             </p>
           </div>
         </div>
@@ -63,9 +63,9 @@ const KeyPoints = () => {
       {/* grow with verv */}
       <div className="lg:w-[1200px] flex flex-col lg:flex-row justify-center items-center gap-4 py-3 m-auto bg-green-400 rounded-3xl mt-11 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100">
         <img src={oliveTree} alt="olive tree" />
-        <p className="text-xl text-center lg:text-right lg:text-2xl">
-          Grow with Verv - for each tenancy, we plant an olive tree, rooted in
-          the name of Landlords and Tenants.
+        <p className="text-center lg:text-right lg:text-2xl">
+          Grow with Verv - for each tenancy, we will plant an olive tree, rooted
+          in the name of Landlords & Tenants.
         </p>
       </div>
 

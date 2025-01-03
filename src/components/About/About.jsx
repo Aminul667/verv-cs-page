@@ -35,11 +35,14 @@ const About = () => {
               A Digital Bridge Between Landlords & Tenants
             </h2>
             <p className="lg:text-lg leading-7">
-              Welcome to Verv-where renting meets the future. As we step boldly
-              into 2025, we&apos;re leaving outdated processes and sky-high fees
-              in the dust. It&apos;s time to shake up the rental world, cut out
-              the nonsense, and give landlords and tenants a platform that
-              actually works for them.
+              Welcome to Verv, where renting meets the future. As a brand-new
+              digital platform powered by AI, we’re here to disrupt outdated
+              processes and redefine the rental experience from the ground up.
+              Our innovative software streamlines tasks, enhances transparency,
+              and delivers smarter, personalised solutions. It’s time to
+              revolutionise how landlords, estate agents, and tenants
+              connect—cutting out the hassle and providing a platform that truly
+              works for everyone.
             </p>
             {/* form */}
             <form

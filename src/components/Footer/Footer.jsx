@@ -21,14 +21,16 @@ const Footer = () => {
               Transparent. Free.
             </p>
             <p className="leading-5">
-              Copyright © {new Date().getFullYear()} - All right reserved
+              Copyright © {new Date().getFullYear()} - All right reserved. A
+              company owned and registered by Verv Group Skopje LLC in North
+              Macedonia
             </p>
           </div>
         </aside>
         <nav className="hidden lg:grid-flow-col lg:gap-4 lg:place-self-center lg:justify-self-end lg:block">
           <div>
             <IoIosMailUnread size={40} />
-            <p>hello@verv.org</p>
+            <p>earlyaccess@verv.org</p>
           </div>
         </nav>
       </footer>
