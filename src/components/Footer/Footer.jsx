@@ -11,7 +11,7 @@ const Footer = () => {
             <nav className="grid-flow-col gap-4 lg:place-self-center lg:justify-self-end">
               <div className="lg:hidden">
                 <IoIosMailUnread size={40} />
-                <p>hello@verv.org</p>
+                <p>earlyaccess@verv.org</p>
               </div>
             </nav>
           </div>
