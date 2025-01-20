@@ -52,9 +52,10 @@ const KeyPoints = () => {
         >
           <RiLuggageDepositLine className="size-12" />
           <div className="mt-4">
-            <h3 className="text-2xl font-semibold mb-3">Secure Deposits</h3>
+            <h3 className="text-2xl font-semibold mb-3">Compliant Landlords</h3>
             <p className="lg:text-lg leading-6">
-              Peace of mind for everyone involved
+              Discover Landlords with essential certificates like gas safety and
+              active property licensing in force.
             </p>
           </div>
         </div>
